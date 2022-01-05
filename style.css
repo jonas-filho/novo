@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2? family = Lato: wght @ 400; 700; 900 & family = Sacramento & display = swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --linksmenu:#102b3f;
+}
+/*------------inicio Barra de navegação-------------*/
+.conteiner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e0fbfc;
+}
+.logo{
+    width: 100px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: #102b3f;
+    font-size: 20px;
+    list-style: none;
+
+}
+/*------------fim Barra de navegação-------------*/
+
+/*------------inicio painel banner-------------*/
+
+.conteiner-painel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #871746;
+    height: 80vh;
+}
+.conteudo-painel{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-left: 50px;
+    flex: 1;
+}
+.conteudo-painel h1{
+    color: #e0fbfc;
+    font-size: 50px;
+}
+.conteudo-painel p{
+    color: #e0fbfc;
+    font-size: 20px;
+    padding-top: 15px;
+    border-top: 3px solid #102b3f;
+}
+.imagem-painel img{
+    width: 300px;
+}
+.imagem-painel{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+/*------------fim painel banner-------------*/
+
+/*------------inicio section serviço-------------*/
+.service-title{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    color: #871746;
+    font-size: 30px;
+}
+
+.conteiner-serviços{
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+.service-list{
+    list-style-image: url(imagens/check\ 30x30.png);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 10px;  
+}
+.service-list li{
+    line-height: 30px;
+    color: #871746;
+    font-size: 20px;
+    font-weight: bold;
+}
+.imagem-serviço{
+    flex: 1;
+    background-image: url(imagens/10-reparos-de-celulares-mais-procurados.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*------------fim section serviço-------------*/
+
+/*------------inicio section formulario-------------*/
+
+.conteiner-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    max-width: 100%; 
+    background-image: linear-gradient(to right,rgba(135, 23, 70, 0.502),rgb(131, 63, 91,0.5)),url(imagens/pexels-mart-production-7709225.jpg);
+
+}
+
+.form-conteudo{
+    max-width: 350px;
+    background-color: #871746da;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.form-conteudo h2,.form-conteudo p{
+    margin-bottom: 15px;
+    color: #e0fbfc;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+
+
+}
+input, select{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/*------------inicio section formulario-------------*/
+.conteiner-produtos{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.conteiner-produtos .cards-conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 40px;
+}
+.conteiner-produtos .cards-conteiner .produto{
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #fff;
+    box-shadow: 0 14px 16px rgba(0,0,0,.5);
+    outline: 2px solid #ccc;
+    outline-offset: -30px;
+    cursor: pointer;
+}
+
+.conteiner-produtos .cards-conteiner .produto:hover{
+    outline: 2px solid #871746;
+    outline-offset: 0;
+
+}
+.conteiner-produtos .cards-conteiner .produto img{
+    width: 280px;
+}
+.conteiner-produtos .cards-conteiner .produto img:hover{
+    transform: scale(.9);
+}
+.conteiner-produtos .cards-conteiner .produto h4{
+    padding: 20px;
+    font-size: 20px;
+    color: #102b3f;
+}
+.conteiner-produtos .cards-conteiner .produto .preco{
+    font-size: 20px;
+    color: #102b3f;
+}
+
+
+
+@media screen and (max-width:786px){
+    .conteiner-painel{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .conteudo-painel{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        margin: 40px 50px;
+    }
+    .conteudo-painel h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .conteudo-painel p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .imagem-painel img{
+        width: 200px;
+        margin-bottom: 50px;
+    }
+    .imagem-serviço{
+        display: none;
+    }
+        
+    
+    
+}
