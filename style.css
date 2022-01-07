@@ -90,6 +90,8 @@
     margin-top: 10px;  
 }
 .service-list li{
+    list-style-image: url(imagens/check\ 30x30.png);
+    margin-left: 50px;
     line-height: 30px;
     color: #871746;
     font-size: 20px;
@@ -192,7 +194,7 @@ input, select{
     font-weight: bolder;
 }
 
-
+/*----------inicio do rodape------------*/
 .conteiner-rodape{
     display: flex;
     background-color: #102b3f;
@@ -264,8 +266,10 @@ input, select{
     font-size: 25px;
 }
 
+/*----------Fim do rodape------------*/
 
 
+/*midias queries*/
 @media screen and (max-width:786px){
     .conteiner-painel{
         display: flex;
