@@ -59,7 +59,7 @@
 }
 .imagem-painel img{
     width: 300px;
-    filter: drop-shadow(10px 10px 10px #102b3f);
+    filter: drop-shadow(10px 10px 5px #000);
     
 }
 .imagem-painel{
