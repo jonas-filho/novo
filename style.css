@@ -59,6 +59,8 @@
 }
 .imagem-painel img{
     width: 300px;
+    filter: drop-shadow(10px 10px 10px #102b3f);
+    
 }
 .imagem-painel{
     display: flex;
@@ -81,7 +83,6 @@
     margin: auto;
 }
 .service-list{
-    list-style-image: url(imagens/check\ 30x30.png);
     display: flex;
     flex: 1;
     justify-content: center;
@@ -89,6 +90,7 @@
     margin-bottom: 50px;
     margin-top: 10px;  
 }
+
 .service-list li{
     list-style-image: url(imagens/check\ 30x30.png);
     margin-left: 50px;
@@ -271,6 +273,24 @@ input, select{
 
 /*midias queries*/
 @media screen and (max-width:786px){
+    
+    .conteiner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #e0fbfc;
+    }
+    .logo{
+        width: 80px;
+        padding: 5px;
+    }
+    .menu{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
     .conteiner-painel{
         display: flex;
         flex-direction: column;
@@ -295,10 +315,22 @@ input, select{
         width: 200px;
         margin-bottom: 50px;
     }
+
+    .service-title{
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+        color: #871746;
+        font-size: 20px;
+    }
+
+    .service-list li{
+        list-style-image: url(imagens/check\ 30x30.png);
+        line-height: 30px;
+        color: #871746;
+        font-size: 18px;
+        font-weight: 700;
+    }
     .imagem-serviço{
         display: none;
-    }
-        
-    
-    
+    } 
 }
