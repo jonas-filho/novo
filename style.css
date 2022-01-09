@@ -332,5 +332,9 @@ input, select{
     }
     .imagem-serviço{
         display: none;
-    } 
+    }
+
+    .menu-rodape{
+        display: none;
+    }
 }
