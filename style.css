@@ -267,6 +267,9 @@ input, select{
     color: #e0fbfc;
     font-size: 25px;
 }
+.rodape-oculto{
+    display: none;
+}
 
 /*----------Fim do rodape------------*/
 
@@ -337,4 +340,34 @@ input, select{
     .menu-rodape{
         display: none;
     }
+    .midias-sociais{
+        display: none;
+    }
+    .contatos-rodape{
+        display: none;
+    }
+
+    .rodape-oculto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .rodape-oculto .logo2 img{
+        width: 150px;
+        filter: drop-shadow(5px 5px 5px #fff);
+    }
+    
+    .rodape-oculto .icones{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-top: 20px;
+    }
+    .rodape-oculto .icones a img{
+        width: 50px;
+        filter: drop-shadow(5px 5px 5px #fff);
+    }
+    
 }
