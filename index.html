@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhoneFix | assitencia técnica de Smartphones</title>
+    <title>Menu responsivo</title>
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<!-- Inicio Barra de navegação -->
-    <header class="conteiner">
-        <img class="logo" src="imagens/logo-removebg-preview.png" alt="logo">
-        <nav class="navbar">
-            <ul class="menu">
-                <li class="link">Home</li>
-                <li class="link">Serviços</li>
-                <li class="link">Produtos</li>
-                <li class="link">Contato</li>
-            </ul>
-        </nav>
-    </header>
-<!-- Fim Barra de navegação -->
 
-<!-- Inicio painel banner -->
+<body>
+
+    <nav class="menu">
+
+        <div class="logo"><img src="imagens/logo-removebg-preview.png" alt=""></div>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </nav>
+    <!-- Inicio painel banner -->
 
     <section class="conteiner-painel">
         <div class="conteudo-painel">
@@ -35,156 +44,151 @@
     </section>
 
 <!-- Fim painel banner -->
-
 <!-- Inicio section serviços -->
-    <main>
-        <div class="service-title">
-            <h2>Conheça Nossos Serviços</h2>
+<main>
+    <div class="service-title">
+        <h2>Conheça Nossos Serviços</h2>
+    </div>
+    <section class="conteiner-serviços">
+        
+        <div class="service-list">
+            <ul>
+                <li>troca de display;</li>
+                <li>troca de batéria;</li>
+                <li>troca de componentes plásticos;</li>
+                <li>troca e reparo da porta USB;</li>
+                <li>troca de placa de som;</li>
+                <li>atualização e configuração de softwares;</li>
+                <li>aplicação de peliculas;</li>
+                <li>entre outros</li>
+            </ul>
         </div>
-        <section class="conteiner-serviços">
-            
-            <div class="service-list">
-                <ul>
-                    <li>troca de display;</li>
-                    <li>troca de batéria;</li>
-                    <li>troca de componentes plásticos;</li>
-                    <li>troca e reparo da porta USB;</li>
-                    <li>troca de placa de som;</li>
-                    <li>atualização e configuração de softwares;</li>
-                    <li>aplicação de peliculas;</li>
-                    <li>entre outros</li>
-                </ul>
-            </div>
-            <div class="imagem-serviço">
-                <!--<img src="imagens/10-reparos-de-celulares-mais-procurados.jpg" alt="">-->
-            </div>
-        </section>
+        <div class="imagem-serviço">
+            <!--<img src="imagens/10-reparos-de-celulares-mais-procurados.jpg" alt="">-->
+        </div>
+    </section>
 <!-- fim section serviços -->
 
 <!-- Inicio section formulario -->
-        <!--<div class="service-title">
-            <h2>solicite seu orçamento</h2>
-        </div>-->
-        <section class="conteiner-formulario">
-            <div class="form-conteudo">
-                <h2>Solicite seu orçamento: </h2>
-                <p> Nós trabalhamos com os melhores padrões do mercado para atender nossos clientes. Todos os profissionais são qualificados e especializados no reparo dos aparelhos.</p>
-                <form class="formulario" action="">
-                    <input type="text" name="nome" id="nome" placeholder="nome">
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome">
-                    <input type="tel" name="contato" id="tel-contato" placeholder="ex.:(81)9 0000-0000">
-                    <input type="email" name="email" id="email" placeholder="e-mail">
-                    <select name="serviços" id="serviços">
-                        <option value="">selecione</option>
-                        <option value="troca-de-display">Troca de Display</option>
-                        <option value="troca de batéria">Troca de Batéria</option>
-                        <option value="troca-de-componentes-plasticos">Troca de Componentes Plásticos</option>
-                        <option value="troca-e-Reparo-do-USB">troca e reparo da porta USB</option>
-                        <option value="troca-de-placa-de-som">Troca de Placa de Som</option>
-                        <option value="atualização-e-configuração-de-Software">Atualização e configuração de Software</option>
-                        <option value="aplicacao-de-peliculas">Aplicação de Peliculas</option>
-                    </select>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </section>
-        <section class="conteiner-produtos">
+    <!--<div class="service-title">
+        <h2>solicite seu orçamento</h2>
+    </div>-->
+    <section class="conteiner-formulario">
+        <div class="form-conteudo">
+            <h2>Solicite seu orçamento: </h2>
+            <p> Nós trabalhamos com os melhores padrões do mercado para atender nossos clientes. Todos os profissionais são qualificados e especializados no reparo dos aparelhos.</p>
+            <form class="formulario" action="">
+                <input type="text" name="nome" id="nome" placeholder="nome">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome">
+                <input type="tel" name="contato" id="tel-contato" placeholder="ex.:(81)9 0000-0000">
+                <input type="email" name="email" id="email" placeholder="e-mail">
+                <select name="serviços" id="serviços">
+                    <option value="">selecione</option>
+                    <option value="troca-de-display">Troca de Display</option>
+                    <option value="troca de batéria">Troca de Batéria</option>
+                    <option value="troca-de-componentes-plasticos">Troca de Componentes Plásticos</option>
+                    <option value="troca-e-Reparo-do-USB">troca e reparo da porta USB</option>
+                    <option value="troca-de-placa-de-som">Troca de Placa de Som</option>
+                    <option value="atualização-e-configuração-de-Software">Atualização e configuração de Software</option>
+                    <option value="aplicacao-de-peliculas">Aplicação de Peliculas</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <section class="conteiner-produtos">
 
-            <div class="cards-conteiner">
-                <div class="produto">
-                    <img src="produtos/carregador samsung universal para celular micro usb.webp" alt="">
-                    <h4>carregador samsung universal p/celular micro usb</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-                <div class="produto">
-                    <img src="produtos/caixinhas de som mini.jpg" alt="">
-                    <h4>caixinhas de som mini</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-            
-                <div class="produto">
-                    <img src="produtos/fone de ouvido bluetooth multilaser.jpg" alt="">
-                    <h4>Fone de ouvido bluetooth multilaser</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-                <div class="produto">
-                    <img src="produtos/kit iluminação youtube.jpg" alt="">
-                    <h4>Kit iluminação youtube</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-                <div class="produto">
-                    <img src="produtos/capas para smartphones.jpg" alt="">
-                    <h4>Cases para todos as marcas de smartphones</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-                <div class="produto">
-                    <img src="produtos/assessorio para celular.jpg" alt="">
-                    <h4>Assessorios para Smartphones diversos</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-                <div class="produto">
-                    <img src="produtos/download (1).jpg" alt="">
-                    <h4>Assessorios para Smartphones diversos</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
-                <div class="produto">
-                    <img src="produtos/download.jpg" alt="">
-                    <h4>Assessorios para Smartphones diversos</h4>
-                    <div class="preco">R$ 5,99</div>
-                </div>
+        <div class="cards-conteiner">
+            <div class="produto">
+                <img src="produtos/carregador samsung universal para celular micro usb.webp" alt="">
+                <h4>carregador samsung universal p/celular micro usb</h4>
+                <div class="preco">R$ 5,99</div>
             </div>
+            <div class="produto">
+                <img src="produtos/caixinhas de som mini.jpg" alt="">
+                <h4>caixinhas de som mini</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+        
+            <div class="produto">
+                <img src="produtos/fone de ouvido bluetooth multilaser.jpg" alt="">
+                <h4>Fone de ouvido bluetooth multilaser</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+            <div class="produto">
+                <img src="produtos/kit iluminação youtube.jpg" alt="">
+                <h4>Kit iluminação youtube</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+            <div class="produto">
+                <img src="produtos/capas para smartphones.jpg" alt="">
+                <h4>Cases para todos as marcas de smartphones</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+            <div class="produto">
+                <img src="produtos/assessorio para celular.jpg" alt="">
+                <h4>Assessorios para Smartphones diversos</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+            <div class="produto">
+                <img src="produtos/download (1).jpg" alt="">
+                <h4>Assessorios para Smartphones diversos</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+            <div class="produto">
+                <img src="produtos/download.jpg" alt="">
+                <h4>Assessorios para Smartphones diversos</h4>
+                <div class="preco">R$ 5,99</div>
+            </div>
+        </div>
 
-        </section>
-    </main>
+    </section>
+</main>
 <!-- FIM section serviços -->
 
-    <!--Inicio Rodapé-->
-    <footer class="conteiner-rodape">
-        <div class="menu-rodape">
-            
-            <ul>
-                <li><span>Menu:</span></li>
-                <li class="home">Home</li>
-                <li class="serv">Serviços</li>
-                <li class="prod">Produtos</li>
-                <li class="cont">Contatos</li>
-            </ul>
+<!--Inicio Rodapé-->
+<footer class="conteiner-rodape">
+    <div class="menu-rodape">
+        
+        <ul>
+            <li><span>Menu:</span></li>
+            <li class="home">Home</li>
+            <li class="serv">Serviços</li>
+            <li class="prod">Produtos</li>
+            <li class="cont">Contatos</li>
+        </ul>
+    </div>
+    <div class="midias-sociais">
+        <ul>
+            <li><span>Mídias Sociais:</span></li>
+            <li>facebook</li>
+            <li>Instagram</li>
+            <li>twiter</li>
+            <li>tik tok</li>
+        </ul>
+    </div>
+    <div class="contatos-rodape">
+        <ul>
+            <li><span>Nossos Contatos:</span></li>
+            <li>e-mail</li>
+            <li>Whatzap</li>
+            <li>telefones</li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="rodape-oculto">
+        <div class="logo2">
+            <img src="imagens/logo-removebg-preview.png" alt="">
         </div>
-        <div class="midias-sociais">
-            <ul>
-                <li><span>Mídias Sociais:</span></li>
-                <li>facebook</li>
-                <li>Instagram</li>
-                <li>twiter</li>
-                <li>tik tok</li>
-            </ul>
+        <div class="icones">
+            <a href="#"><img src="icones/facebook triangulo grande.svg" alt=""></a>
+            <a href="#"><img src="icones/instagram triangulo grande.svg" alt=""></a>
+            <a href="#"><img src="icones/whatsapp triangulo verde.svg" alt=""></a>
         </div>
-        <div class="contatos-rodape">
-            <ul>
-                <li><span>Nossos Contatos:</span></li>
-                <li>e-mail</li>
-                <li>Whatzap</li>
-                <li>telefones</li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="rodape-oculto">
-            <div class="logo2">
-                <img src="imagens/logo-removebg-preview.png" alt="">
-            </div>
-            <div class="icones">
-                <a href="#"><img src="icones/facebook triangulo grande.svg" alt=""></a>
-                <a href="#"><img src="icones/instagram triangulo grande.svg" alt=""></a>
-                <a href="#"><img src="icones/whatsapp triangulo verde.svg" alt=""></a>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
-    <!--Inicio Rodapé-->
-
-
-
-
-    
+<!--Inicio Rodapé-->
 </body>
+
 </html>
