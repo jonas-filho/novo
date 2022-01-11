@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:wght@400;700;900 & family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500; 0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & family= Sacramento & display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu{
@@ -32,10 +35,12 @@
 }
 .menu ul li a{
     color:#ffcccc;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .menu ul li a.active, .menu ul li a:hover{
+
     color: #1f1642;
     transition: .4;
 }
@@ -145,13 +150,14 @@
 }
 
 .form-conteudo{
-    max-width: 350px;
+    max-width: 500px;
     background-color: #871746da;
     float: right;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 15px;
     border-radius: 5px;
+    box-shadow: 10px 10px 15px #000000c0;
 }
 .form-conteudo h2,.form-conteudo p{
     margin-bottom: 15px;
@@ -160,21 +166,38 @@
 .formulario{
     display: flex;
     flex-direction: column;
-
-
 }
-input, select{
+input, select, textarea{
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     border: none;
 }
-
+input[type="submit"]{
+    background-color: #9984f099;
+    color: #ffcccc;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+input[type="submit"]:hover{
+    background-color: #ffcccc;
+    color: #9984f0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 /*------------inicio section formulario-------------*/
 .conteiner-produtos{
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 2rem;
+}
+.produtos-title{
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+    color: #871746;
+    font-size: 30px;
 }
 
 .conteiner-produtos .cards-conteiner{
@@ -322,9 +345,6 @@ input, select{
     }
 
     .service-title{
-        text-align: center;
-        padding: 50px 0px 50px 0px;
-        color: #871746;
         font-size: 20px;
     }
 
@@ -425,5 +445,11 @@ input, select{
     }
     #check:checked ~ ul{
        right: -19px;
+    }
+    .produtos-title{
+        font-size: 20px;
+    }
+    .form-conteudo{
+        max-width: 350px;
     }
 }
