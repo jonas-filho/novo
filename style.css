@@ -249,69 +249,87 @@ input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
-.menu-rodape{
-    flex: 1;
+.endereco{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+}
+.endereco p{
+    color: #ffcccc;
+    font-size: 18px;
+}
+.conteiner-sociais{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-sociais h3{
+    color: #ffcccc;
+}
+.sociais{
+    display: flex;
+    gap: 30px;
+}
+.bloco-contatos{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.nossos-contatos{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
     justify-content: center;
 }
-.menu-rodape ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: #e0fbfc;
-    font-size: 15px;
+.nossos-contatos h3{
+    color: #ffcccc;
+    font-size: 18px;
 }
-.menu-rodape ul li span{
-    list-style: none;
+.what{
     display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: #e0fbfc;
-    font-size: 25px;
-}
-.midias-sociais{
     flex: 1;
-    display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.midias-sociais ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: #e0fbfc;
-    font-size: 15px;
+.what img{
+    background-color: #fff;
+    border-radius: 50%;
 }
-.midias-sociais ul li span{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: #e0fbfc;
-    font-size: 25px;
+.what h4{
+    color: #ffcccc;
+    font-size: 18px;
+    letter-spacing: 1.5px;
 }
-.contatos-rodape{
+
+.email{
+    display: flex;
     flex: 1;
-    display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.contatos-rodape ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: #e0fbfc;
-    font-size: 15px;
+.email h4{
+    color: #ffcccc;
+    font-size: 18px;
+    letter-spacing: 1.5px;
 }
-.contatos-rodape ul li span{
-    list-style: none;
+.call-fone{
     display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: #e0fbfc;
-    font-size: 25px;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
 }
+.call-fone h4{
+    color: #ffcccc;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
 .rodape-oculto{
     display: none;
 }
