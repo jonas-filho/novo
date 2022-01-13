@@ -335,6 +335,7 @@ input[type="submit"]:hover{
 }
 
 /*----------Fim do rodape------------*/
+
 @media screen and (max-width:786px){
     
     .conteiner-painel{
@@ -377,16 +378,10 @@ input[type="submit"]:hover{
         display: none;
     }
 
-    .menu-rodape{
+    .endereco,.conteiner-sociais,.bloco-contatos{
         display: none;
     }
-    .midias-sociais{
-        display: none;
-    }
-    .contatos-rodape{
-        display: none;
-    }
-
+    
     .rodape-oculto{
         display: flex;
         flex-direction: column;
