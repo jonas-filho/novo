@@ -430,7 +430,7 @@ input[type="submit"]:hover{
     .menu ul{
         position: fixed;
         width: 100%;
-        /*height: 100vh;*/
+        height: 100vh;
         background-color: #9984f0;
         top: 80px;
         right: -118%;
