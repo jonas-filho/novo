@@ -65,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #871746;
+    background-image:linear-gradient(to right, #871746,#aa8997) ;
     height: 80vh;
 }
 .conteudo-painel{
