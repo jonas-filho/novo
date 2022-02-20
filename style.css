@@ -13,7 +13,8 @@
     background-color: #7754ff;
     width: 100%;
     height: 80px;
-}.menu .logo img{
+}
+.menu .logo img{
     width: 70px;
 }
 .menu .logo{
@@ -422,6 +423,8 @@ input[type="submit"]:hover{
 @media screen and (max-width: 568px) {
     .menu{
         border-bottom:2px solid #ffcccc ;
+        position: fixed;
+        z-index: 1;
     }
     .menu .logo{
         font-size: 25px;
